@@ -6,9 +6,9 @@ USE online;
 
 -- Creating table
 CREATE TABLE productdetails (
-order_id INT,
-customer_Name VARCHAR(100),
-product VARCHAR(100),
+order_id INT NOT NULL,
+customer_name VARCHAR(100) NOT NULL,
+product VARCHAR(100) NOT NULL,
 PRIMARY KEY (order_id, product) 
 );
 
@@ -29,7 +29,7 @@ VALUES
 
 
 CREATE TABLE Orders(
-order_id INT PRIMARY KEY AUTO_INCREMENT,
+order_id INT PRIMARY KEY,
 customer_Name VARCHAR(100)
 );
 
